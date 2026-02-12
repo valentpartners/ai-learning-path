@@ -304,23 +304,26 @@ const contentData = {
         title: 'Azure Track - Intermediate',
         subtitle: 'Design enterprise-grade AI solutions',
         concepts: [
-            'Fine-tuning Azure OpenAI models',
-            'Multi-agent patterns',
-            'AI Studio project management',
-            'Evaluation and benchmarking',
-            'AI orchestration patterns'
+            'Developing generative AI applications',
+            'Implementing computer vision solutions',
+            'Implementing information extraction solutions',
+            'Using REST APIs and SDKs',
+            'Language analysis in AI systems',
         ],
         tools: [
-            'Azure ML pipelines',
+            'Azure Foundry',
             'Semantic Kernel',
-            'Azure Monitor for AI',
-            'Responsible AI dashboard',
-            'Prompt flow and experimentation tools'
+            'Azure AI Services (e.g., vision, language, information extraction services)',
+            'C#', 'Python',
+            'REST‑based APIs',
+            'Azure SDKs',
         ],
         deliverables: [
-            'Custom Azure OpenAI models',
-            'Complex Prompt Flow solutions',
-            'Enterprise deployment patterns'
+            'Generative AI–enabled solutions',
+            'Computer vision–based features',
+            'Information extraction pipelines',
+            'Language analysis components',
+            'Microsoft Certification - Azure AI Engineer Associate'
         ],
         training: [
             {
