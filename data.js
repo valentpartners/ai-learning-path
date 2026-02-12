@@ -32,6 +32,16 @@ const contentData = {
                 duration: '10 minutes',
             },
             {
+                name: 'What are AI Agents?',
+                url: 'https://www.youtube.com/watch?v=F8NKVhkZZWI',
+                duration: '12 minutes',
+            },
+            {
+                name: 'LLM vs Agents',
+                url: 'https://www.youtube.com/watch?v=I9z-nrk9cw0',
+                duration: '8 minutes',
+            },
+            {
                 name: 'Optimizing AI Models',
                 url: 'https://www.youtube.com/watch?v=zYGDpG-pTho',
                 duration: '13 minutes',
@@ -40,12 +50,6 @@ const contentData = {
                 name: 'MCP (Model Context Protocol) Explained',
                 url: 'https://www.youtube.com/watch?v=7j1t3UZA1TY&t',
                 duration: '13 minutes',
-                
-            },
-            {
-                name: 'What are AI Agents?',
-                url: 'https://www.youtube.com/watch?v=FwOTs4UxQS4',
-                duration: '10 minutes',
             },
             {
                 name: 'What is RAG (Retrieval-Augmented Generation)?',
