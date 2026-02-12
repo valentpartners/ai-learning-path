@@ -137,10 +137,6 @@
 
 ### Beginner Level
 
-#### Generative AI for Executives
-- **Duration:** 50 minutes
-- **Link:** [AWS Skill Builder - Generative AI for Executives](https://skillbuilder.aws/learn/9EBNY921AD/generative-ai-for-executives/YF6GW2BT1E)
-
 #### Fundamentals of Generative AI
 - **Duration:** 3 hours
 - **Link:** [AWS Skill Builder - Fundamentals of Generative AI](https://skillbuilder.aws/learn/FKXM21R555/fundamentals-of-generative-ai/ZFX96NREH4)
@@ -186,3 +182,13 @@
 - **Link:** [AWS Skill Builder - Bedrock Agent Core](https://skillbuilder.aws/learn/SXMNDA9AJ1/amazon-bedrock-agentcore-getting-started/6SGJD8ZV9A)
 
 ---
+
+## Business Track 
+
+### Beginner Level
+
+#### Generative AI for Executives
+- **Duration:** 50 minutes
+- **Link:** [AWS Skill Builder - Generative AI for Executives](https://skillbuilder.aws/learn/9EBNY921AD/generative-ai-for-executives/YF6GW2BT1E)
+
+(TODO)
