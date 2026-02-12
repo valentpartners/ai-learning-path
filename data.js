@@ -25,13 +25,22 @@ const contentData = {
                 name: 'How LLMs work',
                 url:'https://www.youtube.com/watch?v=LPZh9BOjkQs',
                 duration: '10 minutes',
-
             },
             {
                 name: 'Context Window',
                 url: 'https://www.youtube.com/watch?v=-QVoIxEpFkM',
                 duration: '10 minutes',
-
+            },
+            {
+                name: 'Optimizing AI Models',
+                url: 'https://www.youtube.com/watch?v=zYGDpG-pTho',
+                duration: '13 minutes',
+            },
+            {
+                name: 'MCP (Model Context Protocol) Explained',
+                url: 'https://www.youtube.com/watch?v=7j1t3UZA1TY&t',
+                duration: '13 minutes',
+                
             },
             {
                 name: 'What are AI Agents?',
@@ -42,7 +51,12 @@ const contentData = {
                 name: 'What is RAG (Retrieval-Augmented Generation)?',
                 url: 'https://www.youtube.com/watch?v=T-D1OfcDW1M',
                 duration: '7 minutes',
-            },  
+            },
+            {
+                name: 'What are embeddings?',
+                url: 'https://www.youtube.com/watch?v=wgfSDrqYMJ4',
+                duration: '8 minutes',
+            },
             {
                 name: 'Vector Databases Explained',
                 url: 'https://www.youtube.com/watch?v=gl1r1XV0SLw',
@@ -57,16 +71,6 @@ const contentData = {
                 name: 'AI vs ML',
                 url: 'https://www.youtube.com/watch?v=qYNweeDHiyU',
                 duration: '10 minutes',
-            },
-            {
-                name: 'Intro to MCP',
-                url: 'https://anthropic.skilljar.com/introduction-to-model-context-protocol',
-                duration: '1 hour',
-            },
-            {
-                name: 'Advanced MCP',
-                url: 'https://anthropic.skilljar.com/model-context-protocol-advanced-topics',
-                duration: '1 hour',
             },
             {   name: 'Claude 101 - Foundations of AI with Claude',
                 url: 'https://anthropic.skilljar.com/claude-101',
@@ -104,6 +108,16 @@ const contentData = {
             'Dive into AWS AI/ML offerings such as Amazon SageMaker and Amazon Bedrock',
         ],
         training: [
+            {
+                name: 'Intro to MCP',
+                url: 'https://anthropic.skilljar.com/introduction-to-model-context-protocol',
+                duration: '1 hour',
+            },
+            {
+                name: 'Advanced MCP',
+                url: 'https://anthropic.skilljar.com/model-context-protocol-advanced-topics',
+                duration: '1 hour',
+            },
             {
                 name: 'Course: Fundamentals of Generative AI',
                 url: 'https://skillbuilder.aws/learn/FKXM21R555/fundamentals-of-generative-ai/ZFX96NREH4',
@@ -238,6 +252,16 @@ const contentData = {
             'Microsoft Certification - Azure AI Fundamentals',
         ],
         training: [
+            {
+                name: 'Intro to MCP',
+                url: 'https://anthropic.skilljar.com/introduction-to-model-context-protocol',
+                duration: '1 hour',
+            },
+            {
+                name: 'Advanced MCP',
+                url: 'https://anthropic.skilljar.com/model-context-protocol-advanced-topics',
+                duration: '1 hour',
+            },
             {
                 name: 'AI Concepts Overview',
                 url: 'https://learn.microsoft.com/en-us/training/modules/get-started-ai-fundamentals/',
