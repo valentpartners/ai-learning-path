@@ -88,34 +88,50 @@ const contentData = {
         title: 'AWS Track - Beginner',
         subtitle: 'Build and deploy simple AI solutions',
         concepts: [
-            'Bedrock runtime APIs',
-            'Knowledge Bases for RAG',
-            'Guardrails implementation',
-            'Agents for Bedrock',
-            'Model selection criteria (cost, latency, performance)'
+            'Fundamentals of Generative AI',
+            'Responsible AI',
+            'Security, compliance, and governance',
+            'From LLMS to Agents',
+            'Customizing Agentic Solutions',
+            'Implementing Agentic AI Frameworks',
         ],
         tools: [
-            'Boto3 (AWS Python SDK)',
-            'AWS Lambda for AI',
-            'Amazon Kendra',
-            'OpenSearch Serverless',
-            'Bedrock Playground'
+            'AWS Bedrock',
+            'Agentcore',
         ],
         deliverables: [
-            'Build Bedrock chatbot',
-            'Implement RAG with Knowledge Bases',
-            'Create serverless AI application'
+            'Understand what machine learning and generative ai is',
+            'Dive into AWS AI/ML offerings such as Amazon SageMaker and Amazon Bedrock',
         ],
         training: [
             {
-                name: 'Fundamentals of Generative AI',
+                name: 'Course: Fundamentals of Generative AI',
                 url: 'https://skillbuilder.aws/learn/FKXM21R555/fundamentals-of-generative-ai/ZFX96NREH4',
                 duration: '3 hours'
             },
             {
-                name: 'Agentic AI Foundations',
+                name: 'Course: Agentic AI Foundations',
                 url: 'https://skillbuilder.aws/learning-plan/HDZPWG63J3/agentic-ai-foundations/R4E9CC77T7',
                 duration: '6 hours'
+            },
+            {
+                name: 'Tutorial: Deploy any AI agent with AgentCore',
+                url: 'https://www.youtube.com/watch?v=N7FGbBq1mI4',
+                duration: '15 minutes',
+            },
+            {
+                name: 'Tutorial: Bedrock Running in Lambda',
+                url: 'https://www.youtube.com/watch?v=7PK4zdUgAt0',
+                duration: '10 minutes',
+            },
+                        {
+                name: 'Amazon Bedrock Agent Core Getting Started',
+                url: 'https://skillbuilder.aws/learn/SXMNDA9AJ1/amazon-bedrock-agentcore-getting-started/6SGJD8ZV9A',
+                duration: '1 hour'
+            },
+            {
+                name: 'Documentation: Amazon Bedrock',
+                url: 'https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html',
             }
         ]
     },
@@ -167,11 +183,6 @@ const contentData = {
                 url: 'https://skillbuilder.aws/learn/7UWY7BAE4X/digital-classroom--developing-generative-ai-applications-on-aws/4FBWZ9EK8X',
                 duration: '16 hours'
             },
-            {
-                name: 'Amazon Bedrock Agent Core Getting Started',
-                url: 'https://skillbuilder.aws/learn/SXMNDA9AJ1/amazon-bedrock-agentcore-getting-started/6SGJD8ZV9A',
-                duration: '1 hour'
-            }
         ]
     },
     'aws-expert': {
