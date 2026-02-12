@@ -44,8 +44,8 @@ svg {
 }
 
 .foundation-box {
-    fill: #fff3e0;
-    stroke: #f57c00;
+    fill: #deffe0;
+    stroke: #11911c;
     stroke-width: 2;
     rx: 8;
 }
@@ -97,7 +97,7 @@ svg {
 }
 
 .foundation-text {
-    fill: #e65100;
+    fill: #08660f;
 }
 
 .path-line {
@@ -173,8 +173,8 @@ svg {
 }
 
 .legend-foundation {
-    background: #fff3e0;
-    border-color: #f57c00;
+    background: #deffe0;
+    border-color: #11911c;
 }
 
 /* Sidebar Styles */
