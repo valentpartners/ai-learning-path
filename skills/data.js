@@ -64,21 +64,28 @@ const DATA = [
                   {
                     "name": "APIs & SDKs",
                     "children": [
+                      // https://developers.openai.com/api/docs
                       {
-                        "name": "Chat Completions API",
-                        "description": "The core API for interacting with OpenAI models. Send a list of messages and receive a model-generated response. Supports system prompts, multi-turn conversations, function calling, and streaming.",
-                        "tags": ["API", "Core", "REST"],
+                        "name": "OpenAI API",
+                        "description": "OpenAI's unified API for accessing all OpenAI models and features. Supports REST and gRPC interfaces with advanced capabilities like function calling, tool use, and multimodal inputs.",
+                        "tags": ["API", "OpenAI", "Multimodal"],
                         "sources": [
-                          { "label": "OpenAI Docs — Chat Completions", "url": "https://platform.openai.com/docs/guides/chat-completions" },
-                          { "label": "API Reference", "url": "https://platform.openai.com/docs/api-reference/chat" }
+                          { "label": "OpenAI API Docs", "url": "https://developers.openai.com/api/docs" },
+                          { "label": "API Core Concepts", "url": "https://developers.openai.com/api/docs/guides/text" },
+                          { "label": "API Agents Guide", "url": "https://developers.openai.com/api/docs/guides/agents" },
+                          { "label": "API Tools Guide", "url": "https://developers.openai.com/api/docs/guides/tools" },
+                          { "label": "API Realtime Guide", "url": "https://developers.openai.com/api/docs/guides/realtime" },
+
+
                         ]
                       },
                       {
-                        "name": "Responses API",
-                        "description": "OpenAI's newer API that combines chat completions with built-in tool execution. Supports web search, file search, and computer use as native capabilities without manual orchestration.",
-                        "tags": ["API", "Agentic", "Tools"],
+                        "name": "OpenAI Codex API",
+                        "description": "OpenAI's API for agentic coding tasks. Provides access to Codex models that can write, edit, and debug code across multiple programming languages with an agentic interface.",
+                        "tags": ["API", "Coding", "Agent"],
                         "sources": [
-                          { "label": "OpenAI Docs — Responses API", "url": "https://platform.openai.com/docs/api-reference/responses" }
+                          { "label": "OpenAI Codex", "url": "https://openai.com/index/openai-codex/" },
+                          { "label": "Quick start", "url": " https://developers.openai.com/codex/quickstart" }
                         ]
                       },
                       {
@@ -90,30 +97,6 @@ const DATA = [
                           { "label": "GitHub Repository", "url": "https://github.com/openai/openai-agents-python" }
                         ]
                       },
-                      {
-                        "name": "Embeddings API",
-                        "description": "Convert text into numerical vector representations that capture semantic meaning. Essential for building search, recommendation, clustering, and RAG systems.",
-                        "tags": ["API", "Embeddings", "Vectors"],
-                        "sources": [
-                          { "label": "OpenAI Docs — Embeddings", "url": "https://platform.openai.com/docs/guides/embeddings" }
-                        ]
-                      },
-                      {
-                        "name": "Fine-tuning API",
-                        "description": "Customize OpenAI models on your own data to improve performance for specific tasks. Train on examples of ideal inputs and outputs to get consistently formatted, domain-specific responses.",
-                        "tags": ["API", "Training", "Customization"],
-                        "sources": [
-                          { "label": "OpenAI Docs — Fine-tuning", "url": "https://platform.openai.com/docs/guides/fine-tuning" }
-                        ]
-                      },
-                      {
-                        "name": "Realtime API (Voice)",
-                        "description": "Build low-latency, multi-modal conversational experiences with persistent WebSocket connections. Supports speech-to-speech interactions with natural voice, interruption handling, and function calling.",
-                        "tags": ["API", "Voice", "WebSocket", "Realtime"],
-                        "sources": [
-                          { "label": "OpenAI Docs — Realtime API", "url": "https://platform.openai.com/docs/guides/realtime" }
-                        ]
-                      }
                     ]
                   },
                   {
@@ -125,7 +108,7 @@ const DATA = [
                         "tags": ["App", "Consumer", "Assistant"],
                         "sources": [
                           { "label": "ChatGPT", "url": "https://chatgpt.com" },
-                          { "label": "ChatGPT Overview", "url": "https://openai.com/chatgpt" }
+                          { "label": "ChatGPT 101", "url": "https://academy.openai.com/public/videos/chatgpt-101-a-guide-to-your-super-assistant-2025-02-13" }
                         ]
                       },
                       {
@@ -134,7 +117,8 @@ const DATA = [
                         "tags": ["Image Gen", "Multimodal", "Creative"],
                         "sources": [
                           { "label": "DALL·E 3 Announcement", "url": "https://openai.com/index/dall-e-3/" },
-                          { "label": "Image Generation API", "url": "https://platform.openai.com/docs/guides/images" }
+                          { "label": "Research Paper", "url": "https://cdn.openai.com/papers/dall-e-3.pdf" },
+                          { "label": "DALL·E API", "url": "https://developers.openai.com/api/docs/models/dall-e-3" }
                         ]
                       },
                       {
@@ -208,7 +192,7 @@ const DATA = [
                         "tags": ["App", "Consumer", "Business"],
                         "sources": [
                           { "label": "Claude.ai", "url": "https://claude.ai" },
-                          { "label": "Claude Support", "url": "https://support.anthropic.com" }
+                          { "label": "Claude 101", "url": "https://anthropic.skilljar.com/claude-101" }
                         ]
                       },
                       {
@@ -217,31 +201,17 @@ const DATA = [
                         "tags": ["CLI", "Agent", "Coding"],
                         "sources": [
                           { "label": "Claude Code Docs", "url": "https://docs.anthropic.com/en/docs/claude-code" },
-                          { "label": "Claude Code Overview", "url": "https://www.anthropic.com/claude-code" }
+                          { "label": "Claude code in action", "url": "https://anthropic.skilljar.com/claude-code-in-action" }
                         ]
                       },
                       {
-                        "name": "Messages API",
-                        "description": "Anthropic's core API for sending structured conversations to Claude and receiving responses. Supports system prompts, multi-turn dialogue, streaming, and various content types including images and documents.",
-                        "tags": ["API", "Core", "REST"],
+                        "name": "Claude API",
+                        "description": "Anthropic's API for integrating Claude into your applications. Supports REST and gRPC interfaces with features for tool use, function calling, and multimodal inputs.",
+                        "tags": ["API", "Anthropic", "Multimodal"],
                         "sources": [
-                          { "label": "Messages API Reference", "url": "https://docs.anthropic.com/en/api/messages" },
-                          { "label": "Getting Started", "url": "https://docs.anthropic.com/en/api/getting-started" }
-                        ]
-                      },
-                      {
-                        "name": "Tool Use / Function Calling",
-                        "description": "Give Claude access to external tools and functions. Define tool schemas, and Claude will decide when and how to use them, enabling integration with databases, APIs, calculators, and more.",
-                        "tags": ["API", "Tools", "Agentic"],
-                        "sources": [
-                          { "label": "Tool Use Guide", "url": "https://docs.anthropic.com/en/docs/build-with-claude/tool-use" }
-                        ]
-                      },
-                      {
-                        "name": "Extended Thinking",
-                        "description": "A feature that gives Claude the ability to show its internal reasoning process before providing a final answer. Improves performance on complex math, coding, and analysis tasks by encouraging step-by-step thinking.",
-                        "tags": ["Reasoning", "Chain-of-Thought", "Advanced"],
-                        "sources": [
+                          { "label": "Claude API Docs", "url": "https://platform.claude.com/docs/en/get-started" },
+                          { "label": "Working with messages", "url": "https://platform.claude.com/docs/en/build-with-claude/working-with-messages" },
+                          { "label": "Tool Use Guide", "url": "https://docs.anthropic.com/en/docs/build-with-claude/tool-use" },
                           { "label": "Extended Thinking Guide", "url": "https://docs.anthropic.com/en/docs/build-with-claude/extended-thinking" }
                         ]
                       }
@@ -256,20 +226,27 @@ const DATA = [
                     "name": "Models",
                     "children": [
                       {
-                        "name": "Gemini 2.5 Pro / Flash",
-                        "description": "Google's multimodal AI models. Gemini 2.5 Pro is the high-capability model for complex reasoning, while Flash prioritizes speed and efficiency. Both support text, images, video, and audio natively.",
-                        "tags": ["Multimodal", "LLM", "Google"],
-                        "sources": [
-                          { "label": "Gemini Overview", "url": "https://deepmind.google/technologies/gemini/" },
-                          { "label": "Google AI Studio", "url": "https://aistudio.google.com/" }
-                        ]
-                      },
-                      {
-                        "name": "Gemini 3 Pro",
+                        "name": "Gemini 3",
                         "description": "Google's next-generation model with further improvements in reasoning, multimodal understanding, and agentic capabilities. Pushes the frontier of what's possible with large language models.",
                         "tags": ["LLM", "Next-gen", "Google"],
                         "sources": [
-                          { "label": "Google DeepMind", "url": "https://deepmind.google/technologies/gemini/" }
+                          { "label": "Google DeepMind", "url": "https://deepmind.google/models/gemini/" }
+                        ]
+                      },
+                      {
+                        "name": "Nano Banana",
+                        "description": "Google's compact multimodal model designed for image understanding and generation tasks. Excels at interpreting visual content and generating images from text prompts with high fidelity.",
+                        "tags": ["Multimodal", "Image Gen", "Google"],
+                        "sources": [
+                          { "label": "Nano Banana Overview", "url": "https://deepmind.google/models/gemini-image/" }
+                        ]
+                      },
+                      {
+                        "name": "Gemini Audio",
+                        "description": "Google's model for understanding and generating audio content. Capable of transcribing, analyzing, and creating audio across various formats, enabling new possibilities for voice interfaces and music generation.",
+                        "tags": ["Multimodal", "Audio", "Google"],
+                        "sources": [
+                          { "label": "Gemini Audio Overview", "url": "https://deepmind.google/models/gemini-audio/" }
                         ]
                       }
                     ]
@@ -286,11 +263,11 @@ const DATA = [
                         ]
                       },
                       {
-                        "name": "Vertex AI",
-                        "description": "Google Cloud's fully managed ML platform for building, deploying, and scaling AI applications. Provides access to Gemini models, fine-tuning, evaluation, grounding, and enterprise-grade infrastructure.",
-                        "tags": ["Cloud", "Enterprise", "MLOps"],
+                        "name": "Gemini API",
+                        "description": "Google's API for accessing Gemini models in your applications. Supports REST and gRPC interfaces with features for tool use, function calling, and multimodal inputs.",
+                        "tags": ["API", "Google", "Multimodal"],
                         "sources": [
-                          { "label": "Vertex AI", "url": "https://cloud.google.com/vertex-ai" }
+                          { "label": "Gemini API Docs", "url": "https://ai.google.dev/gemini-api/docs" }
                         ]
                       },
                       {
@@ -569,7 +546,8 @@ const DATA = [
                 "tags": ["Skill", "Practical", "Essential"],
                 "sources": [
                   { "label": "Anthropic Prompt Engineering Guide", "url": "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview" },
-                  { "label": "OpenAI Prompt Engineering Guide", "url": "https://platform.openai.com/docs/guides/prompt-engineering" }
+                  { "label": "OpenAI Prompt Engineering Guide", "url": "https://platform.openai.com/docs/guides/prompt-engineering" },
+                  { "label": "Claude Prompt Library", "url": "https://platform.claude.com/docs/en/resources/prompt-library/library" }
                 ]
               },
               {
