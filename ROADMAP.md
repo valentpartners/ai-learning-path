@@ -172,7 +172,7 @@ Techniques for coordinating multiple AI agents to work together on complex tasks
 ## 🟢 AI Building Blocks
 This module covers cloud platforms for AI development, building AI chat applications, using tools and plugins, creating agents, setting up MCP, and implementing RAG.
 
-### Cloud Platforms
+### Deploy a Model in the Cloud
 
 #### Azure AI Foundry
 

@@ -144,7 +144,7 @@ const DATA = [
         "goal": "This module covers cloud platforms for AI development, building AI chat applications, using tools and plugins, creating agents, setting up MCP, and implementing RAG.",
         "children": [
           {
-            "name": "Cloud Platforms",
+            "name": "Deploy a Model in the Cloud",
             "children": [
               {
                 "name": "Azure AI Foundry",
@@ -193,7 +193,7 @@ const DATA = [
             ]
           },
           {
-            "name": "Tools and Plugins",
+            "name": "Model Tools and Plugins",
             "children": [
               {
                 "name": "Semantic Kernel Plugins",
