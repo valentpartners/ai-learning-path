@@ -240,7 +240,7 @@ tabs.forEach((tab, i) => {
   btn.style.setProperty('--tab-color', colors.color);
   btn.style.setProperty('--tab-bg', colors.light);
   btn.style.setProperty('--tab-border', colors.border);
-  btn.innerHTML = `<span style="font-size:16px">${tab.icon || '●'}</span>${tab.name}<span class="tab-count">${tab.children ? tab.children.length : 0}</span>`;
+  btn.innerHTML = `<span style="font-size:16px">${tab.icon || '●'}</span>${tab.name}`;
   btn.addEventListener('click', () => {
     document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
     document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
@@ -253,6 +253,10 @@ tabs.forEach((tab, i) => {
   panel.className = 'tab-content' + (i === 0 ? ' active' : '');
   panel.dataset.tabContent = slug;
 
+  const moduleGoal = document.createElement('div');
+  moduleGoal.className = 'module-goal';
+  moduleGoal.textContent = tab.goal || '';
+  panel.appendChild(moduleGoal);
   const toolbar = document.createElement('div');
   toolbar.className = 'toolbar';
   const expandBtn = document.createElement('button');
