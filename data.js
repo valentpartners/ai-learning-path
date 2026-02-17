@@ -181,8 +181,32 @@ const DATA = [
             ]
           },
           {
-            "name": "Creating Agents - TODO",
-            "children": [{}]
+            "name": "Creating Agents",
+            "children": [
+              { 
+                "name": "Create Agents with Azure Foundry", 
+                "description": "Learn how to create AI agents using Azure Foundry.",
+                "tags": ["Azure Foundry", "Agents", "Semantic Kernel"],
+                "sources": [
+                  {
+                    "label": "Single Agent Creation with Azure Foundry and Semantic Kernel",
+                    "url": "https://www.youtube.com/watch?v=EtvW3sr_vqA&list=PLyqwquIuSMZpGDiocmT-M67dcDxjWmoYK&index=5"
+                  },
+                                    {
+                    "label": "Multiple Agent Creation with Azure Foundry and Semantic Kernel",
+                    "url": "https://www.youtube.com/watch?v=0hXFDPx9bug&list=PLyqwquIuSMZpGDiocmT-M67dcDxjWmoYK&index=3"
+                  }
+                ]
+              },
+              { 
+                "name": "Create Agents with AWS Bedrock",
+                "description": "Learn how to create AI agents using AWS Bedrock.",
+                "tags": ["AWS Bedrock", "Agents", "Agent Core"],
+                "sources": [
+                  { "label": 'Tutorial: Deploy any AI agent with AgentCore', "url": 'https://www.youtube.com/watch?v=N7FGbBq1mI4' },
+                ]
+              }
+            ]
           },
           {
             "name": "MCP setup",
@@ -340,7 +364,6 @@ const DATA = [
                   { "label": "Agent Core Docs", "url": "https://docs.aws.amazon.com/bedrock-agentcore/"},
                   { "label": "Agent Core - Getting Started Toolkit", "url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/agentcore-get-started-toolkit.html" },
                   { "label": "Agent Core - Samples", "url": "https://github.com/awslabs/amazon-bedrock-agentcore-samples/?tab=readme-ov-file"},
-                  { "label": 'Tutorial: Deploy any AI agent with AgentCore', "url": 'https://www.youtube.com/watch?v=N7FGbBq1mI4' },
                   { "label": "Agent Core Deep Dive", "url": "https://www.youtube.com/watch?v=Op6L62rS5WU&list=PLrDJzKfz9AUuq0Rt-I0HyWgCNOYME1f6Y" }
                 ]
               },
