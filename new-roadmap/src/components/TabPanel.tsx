@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import type { DataNode } from '../data/data'
 import { getColors, isLeaf } from '../utils'
 import { Accordion } from './Accordion'
+import type { DataNode } from '../types'
 
 interface TabPanelProps {
   tab: DataNode

@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
-import type { DataNode } from '../data/data'
 import { isLeaf } from '../utils'
 import { LeafCard } from './LeafCard'
+import type { DataNode } from '../types'
 
 interface AccordionProps {
   node: DataNode

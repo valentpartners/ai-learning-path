@@ -1,10 +1,10 @@
 import { useState, useEffect, useCallback } from 'react'
 import { DATA } from './data/data'
-import type { DataNode } from './data/data'
 import { Sidebar } from './components/Sidebar'
 import { TabPanel } from './components/TabPanel'
 import { Header } from './components/Header'
 import { Tab } from './components/Tab'
+import type { DataNode } from './types'
 import './App.css'
 
 export default function App() {

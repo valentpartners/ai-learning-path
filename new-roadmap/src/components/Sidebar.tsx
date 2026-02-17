@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import type { DataNode } from '../data/data'
+import type { DataNode } from '../types'
 
 interface SidebarProps {
   node: DataNode | null

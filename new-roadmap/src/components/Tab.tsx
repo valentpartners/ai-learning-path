@@ -1,4 +1,4 @@
-import type { DataNode } from "../data/data";
+import type { DataNode } from "../types";
 import { getColors } from "../utils";
 
 interface TabProps {
