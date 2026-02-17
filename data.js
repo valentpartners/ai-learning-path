@@ -150,7 +150,9 @@ const DATA = [
                 "tags": ["Cloud", "AWS", "Multi-model"],
                 "sources": [
                   { "label": "AWS Bedrock", "url": "https://aws.amazon.com/bedrock/" },
-                  { "label": "Bedrock Documentation", "url": "https://docs.aws.amazon.com/bedrock/" }
+                  { "label": "Bedrock Documentation", "url": "https://docs.aws.amazon.com/bedrock/" },
+                  { "label": "Deploy a Model in Bedrock", "url": "https://www.youtube.com/watch?v=nSQrY-uPWLY" },
+                  { "label": "Import custom model to Bedrock", "url": "https://www.youtube.com/watch?v=1aq_ju70qHQ" },
                 ]
               },
             ]
