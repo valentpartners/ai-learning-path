@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from 'react'
-import { DATA } from './data'
-import type { DataNode } from './data'
+import { DATA } from './data/data'
+import type { DataNode } from './data/data'
 import { DEFAULT_COLORS } from './utils'
 import { Sidebar } from './components/Sidebar'
 import { TabPanel } from './components/TabPanel'

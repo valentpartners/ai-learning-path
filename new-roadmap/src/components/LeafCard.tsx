@@ -1,4 +1,4 @@
-import type { DataNode } from '../data'
+import type { DataNode } from '../data/data'
 
 interface LeafCardProps {
   node: DataNode

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import type { DataNode } from '../data'
+import type { DataNode } from '../data/data'
 import { isLeaf } from '../utils'
 import { Accordion } from './Accordion'
 
@@ -16,7 +16,7 @@ export function TabPanel({ tab, colors, isActive, activeLeaf, onLeafClick }: Tab
 
   return (
     <div className={`tab-content${isActive ? ' active' : ''}`}>
-      {tab.goal && <div className="module-goal">{tab.goal}</div>}
+      {tab.description && <div className="module-goal">{tab.description}</div>}
       <div className="toolbar">
         <button className="toolbar-btn" onClick={() => setExpandAll(!expandAll)}>{expandAll ? 'Collapse all' : 'Expand all'}</button>
       </div>

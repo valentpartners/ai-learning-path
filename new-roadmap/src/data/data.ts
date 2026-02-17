@@ -14,7 +14,6 @@ export interface DataNode {
   color?: string;
   colorLight?: string;
   colorBorder?: string;
-  goal?: string;
 }
 
 export const DATA: DataNode[] = [
@@ -27,7 +26,7 @@ export const DATA: DataNode[] = [
         "color": "#2563EB",
         "colorLight": "#EFF6FF",
         "colorBorder": "#BFDBFE",
-        "goal": "This module covers the basics of AI concepts, model optimization techniques, and advanced optimization strategies to prepare you for building effective AI applications.",
+        "description": "This module covers the basics of AI concepts, model optimization techniques, and advanced optimization strategies to prepare you for building effective AI applications.",
         "children": [
           {
             "name": "Basics of AI",
@@ -153,7 +152,7 @@ export const DATA: DataNode[] = [
         "color": "#16A34A",
         "colorLight": "#ECFDF5",
         "colorBorder": "#A7F3D0",
-        "goal": "This module covers cloud platforms for AI development, building AI chat applications, using tools and plugins, creating agents, setting up MCP, and implementing RAG.",
+        "description": "This module covers cloud platforms for AI development, building AI chat applications, using tools and plugins, creating agents, setting up MCP, and implementing RAG.",
         "children": [
           {
             "name": "Deploy a Model in the Cloud",
@@ -322,7 +321,7 @@ export const DATA: DataNode[] = [
         "color": "#cf3e3e",
         "colorLight": "#fdf2f2",
         "colorBorder": "#fbcfcf",
-        "goal": "This module covers the leading agentic AI frameworks, as well as enterprise orchestration platforms from AWS and Azure.",
+        "description": "This module covers the leading agentic AI frameworks, as well as enterprise orchestration platforms from AWS and Azure.",
         "children": [
           {
             "name": "Frameworks & Libraries",
@@ -418,7 +417,7 @@ export const DATA: DataNode[] = [
         "color": "#a31687",
         "colorLight": "#FDF2FA",
         "colorBorder": "#FBCFE8",
-        "goal": "This module covers the key certifications offered by AWS and Microsoft Azure for AI practitioners and engineers, along with recommended learning paths and resources to prepare for these exams.",
+        "description": "This module covers the key certifications offered by AWS and Microsoft Azure for AI practitioners and engineers, along with recommended learning paths and resources to prepare for these exams.",
         "children": [
           {
             "name": "AWS AI Certifications",

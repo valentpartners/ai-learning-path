@@ -1,4 +1,4 @@
-import type { DataNode } from './data'
+import type { DataNode } from './data/data'
 
 export const DEFAULT_COLORS = [
   { color: '#2563EB', light: '#EFF6FF', border: '#BFDBFE' },

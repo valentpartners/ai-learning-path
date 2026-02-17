@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import type { DataNode } from '../data'
+import type { DataNode } from '../data/data'
 import { isLeaf } from '../utils'
 import { LeafCard } from './LeafCard'
 
