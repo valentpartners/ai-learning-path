@@ -167,7 +167,7 @@ Techniques for coordinating multiple AI agents to work together on complex tasks
 
 ---
 
-## 🟢 Generative AI
+## 🟢 AI Building Blocks
 
 ### Cloud Platforms
 

@@ -135,7 +135,7 @@ const DATA = [
         ]
       },
       {
-        "name": "Generative AI",
+        "name": "AI Building Blocks",
         "icon": "",
         "color": "#16A34A",
         "colorLight": "#ECFDF5",
