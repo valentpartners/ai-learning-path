@@ -1,9 +1,9 @@
 import { useState, useEffect, useCallback } from 'react'
 import { DATA } from './data/data'
 import type { DataNode } from './data/data'
-import { DEFAULT_COLORS } from './utils'
 import { Sidebar } from './components/Sidebar'
 import { TabPanel } from './components/TabPanel'
+import { getColors } from './utils'
 import './App.css'
 
 export default function App() {
@@ -46,11 +46,8 @@ export default function App() {
         </div>
         <div className="tabs">
           {tabs.map((tab, i) => {
-            const colors = {
-              color: tab.color || DEFAULT_COLORS[i % DEFAULT_COLORS.length].color,
-              light: tab.colorLight || DEFAULT_COLORS[i % DEFAULT_COLORS.length].light,
-              border: tab.colorBorder || DEFAULT_COLORS[i % DEFAULT_COLORS.length].border,
-            }
+            const colors = getColors(tab.color, i);
+
             return (
               <button
                 key={tab.name}
@@ -70,11 +67,8 @@ export default function App() {
         </div>
         <div id="tab-panels">
           {tabs.map((tab, i) => {
-            const colors = {
-              color: tab.color || DEFAULT_COLORS[i % DEFAULT_COLORS.length].color,
-              light: tab.colorLight || DEFAULT_COLORS[i % DEFAULT_COLORS.length].light,
-              border: tab.colorBorder || DEFAULT_COLORS[i % DEFAULT_COLORS.length].border,
-            }
+            const colors = getColors(tab.color, i);
+            
             return (
               <TabPanel
                 key={tab.name}

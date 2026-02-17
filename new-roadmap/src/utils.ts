@@ -11,3 +11,14 @@ export const DEFAULT_COLORS = [
 export function isLeaf(node: DataNode): boolean {
   return !node.children || node.children.length === 0
 }
+
+export function getColors(color?: string, index: number = 0) {
+  const colors = {
+    color: color || DEFAULT_COLORS[index % DEFAULT_COLORS.length].color,
+    light: color + '20' || DEFAULT_COLORS[index % DEFAULT_COLORS.length].light,
+    border: color + '80' || DEFAULT_COLORS[index % DEFAULT_COLORS.length].border,
+  }
+
+  return colors;
+}
+

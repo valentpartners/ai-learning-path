@@ -12,8 +12,6 @@ export interface DataNode {
   children?: DataNode[];
   icon?: string;
   color?: string;
-  colorLight?: string;
-  colorBorder?: string;
 }
 
 export const DATA: DataNode[] = [
@@ -24,8 +22,6 @@ export const DATA: DataNode[] = [
         "name": "AI Foundation",
         "icon": "1",
         "color": "#2563EB",
-        "colorLight": "#EFF6FF",
-        "colorBorder": "#BFDBFE",
         "description": "This module covers the basics of AI concepts, model optimization techniques, and advanced optimization strategies to prepare you for building effective AI applications.",
         "children": [
           {
@@ -150,8 +146,6 @@ export const DATA: DataNode[] = [
         "name": "AI Building Blocks",
         "icon": "2",
         "color": "#16A34A",
-        "colorLight": "#ECFDF5",
-        "colorBorder": "#A7F3D0",
         "description": "This module covers cloud platforms for AI development, building AI chat applications, using tools and plugins, creating agents, setting up MCP, and implementing RAG.",
         "children": [
           {
@@ -319,8 +313,6 @@ export const DATA: DataNode[] = [
         "name": "Agent Orchestration",
         "icon": "3",
         "color": "#cf3e3e",
-        "colorLight": "#fdf2f2",
-        "colorBorder": "#fbcfcf",
         "description": "This module covers the leading agentic AI frameworks, as well as enterprise orchestration platforms from AWS and Azure.",
         "children": [
           {
@@ -415,8 +407,6 @@ export const DATA: DataNode[] = [
         "name": "AI Certifications",
         "icon": "4",
         "color": "#a31687",
-        "colorLight": "#FDF2FA",
-        "colorBorder": "#FBCFE8",
         "description": "This module covers the key certifications offered by AWS and Microsoft Azure for AI practitioners and engineers, along with recommended learning paths and resources to prepare for these exams.",
         "children": [
           {
