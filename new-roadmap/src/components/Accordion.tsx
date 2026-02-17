@@ -31,7 +31,12 @@ export function Accordion({
     <div className={`accordion${open ? ' open' : ''}`}>
       <button className="accordion-trigger" onClick={() => setOpen(o => !o)}>
         {isTopLevel && <span className="dot" style={{ background: accentColor }} />}
-        <span className="accordion-chevron">▶</span>
+        <span className="accordion-chevron">
+          {/* arrow icon */}
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+            <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+          </svg>
+        </span>
         <span className="accordion-title">{node.name}</span>
         <span className="accordion-badge">{badgeText}</span>
       </button>

@@ -15,7 +15,6 @@ export function LeafCard({ node, accentColor, isActive, onClick }: LeafCardProps
       onClick={onClick}
     >
       {node.name}
-      <span className="card-arrow">→</span>
     </div>
   )
 }
