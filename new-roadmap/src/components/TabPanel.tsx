@@ -1,18 +1,20 @@
 import { useState } from 'react'
 import type { DataNode } from '../data/data'
-import { isLeaf } from '../utils'
+import { getColors, isLeaf } from '../utils'
 import { Accordion } from './Accordion'
 
 interface TabPanelProps {
   tab: DataNode
-  colors: { color: string; light: string; border: string }
+  index: number
   isActive: boolean
   activeLeaf: string | null
   onLeafClick: (node: DataNode, breadcrumb: string) => void
 }
 
-export function TabPanel({ tab, colors, isActive, activeLeaf, onLeafClick }: TabPanelProps) {
+export function TabPanel({ tab, index, isActive, activeLeaf, onLeafClick }: TabPanelProps) {
   const [expandAll, setExpandAll] = useState(false)
+
+  const colors = getColors(tab.color, index);
 
   return (
     <div className={`tab-content${isActive ? ' active' : ''}`}>
