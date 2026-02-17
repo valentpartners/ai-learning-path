@@ -165,10 +165,10 @@ const DATA = [
             "children": [{}]
           },
           {
-            "name": "Connecting to MCP servers - TODO",
+            "name": "MCP setup",
             "children": [
               {
-                "name": "MCP Advance Topics",
+                "name": "MCP Overview",
                 "description": "Learn how to build modular AI applications using MCP to connect Claude with external tools and data sources. Deep dive into MCP's advanced features including sampling, notifications, and transport implementations",
                 "sources": [
                   {
@@ -181,11 +181,58 @@ const DATA = [
                   },
                 ]
               },
+              {
+                "name": "MCP Implementation with Semantic Kernel",
+                "description": "Learn how to implement MCP with Semantic Kernel.",
+                "sources": [
+                  {
+                    "label": "Semantic Kernel Fundamentals - MCP StdioTransport",
+                    "url": 'https://www.youtube.com/watch?v=NE9Y-6jizO0&list=PLyqwquIuSMZpGDiocmT-M67dcDxjWmoYK&index=2',
+                  },
+                  {
+                    "label": "Semantic Kernel Fundamentals - MCP StreamableHttp",
+                    "url": "https://www.youtube.com/watch?v=1tTUOU9Gnd8&list=PLyqwquIuSMZpGDiocmT-M67dcDxjWmoYK&index=1"
+                  }
+                ]
+              }
             ]
           },
           {
-            "name": "Creating RAG Pipelines - TODO",
-            "children": [{}]
+            "name": "RAG Implementation",
+            "children": [
+              {
+                "name": "What is RAG?",
+                "description": "RAG (Retrieval-Augmented Generation) is a technique that combines information retrieval with generative AI models. It allows LLMs to access external knowledge sources during generation, improving accuracy and relevance of responses.",
+                "sources": [
+                  { "label": "RAG Overview", "url": "https://aws.amazon.com/what-is/retrieval-augmented-generation/" },
+                ]
+              },
+              {
+                "name": "Implementing RAG in AWS",
+                "description": "Learn how to implement RAG in Amazon Bedrock.",
+                "tags": ["RAG", "AWS Bedrock", "Agent Core", "Knowledge Base"],
+                "sources": [
+                  { "label": "Build a RAG based Generative AI Chatbot in 20 mins using Amazon Bedrock Knowledge Base", "url": "https://www.youtube.com/watch?v=hnyDDfo8e9Q" },
+                ]
+              },
+              {
+                "name": "Implementing RAG in Azure",
+                "description": "Learn how to implement a Vector Store and a Search RAG  in Azure AI Foundry.",
+                "tags": ["RAG", "Azure AI Foundry", "Semantic Kernel", "Vector Store", "AI Search"],
+                "sources": [
+                  { "label": "Semantic Kernel Fundamentals - AI Search Vector Store", "url": "https://www.youtube.com/watch?v=txoGIPYBZoU&list=PLyqwquIuSMZpGDiocmT-M67dcDxjWmoYK&index=7" },
+                  { "label": "Semantic Kernel Fundamentals - AI Search RAG", "url": "https://www.youtube.com/watch?v=9_eHPPEQSTM&list=PLyqwquIuSMZpGDiocmT-M67dcDxjWmoYK&index=5"} 
+                ]
+              },
+              {
+                "name": "Learn RAG From Scratch with LangChain",
+                "description": "Learn how to implement RAG from scratch using the LangChain framework.",
+                "tags": ["RAG", "LangChain", "Python"],
+                "sources": [
+                  { "label": "Learn RAG From Scratch – Python AI Tutorial from a LangChain Engineer" , "url": "https://www.youtube.com/watch?v=sVcwVQRHIc8&"}
+                ]
+              }
+            ]
           },
         ]
       },
