@@ -30,6 +30,16 @@ const DATA = [
                 ]
               },
               {
+                "name": "AI Model Parameters (Temperature, Top-p, etc.)",
+                "description": "Parameters that control the behavior of LLMs, including temperature (controls randomness), top-p (controls diversity), and max tokens (controls output length). Understanding these parameters is essential for fine-tuning model outputs.",
+                "tags": ["LLM", "Parameters"],
+                "sources": [
+                  { "label": "What is Temperature?", "url": "https://www.youtube.com/watch?v=ezgqHnWvua8" },
+                  { "label": "What is Top P?", "url": "https://www.youtube.com/watch?v=wQP-im_HInk" },
+                  { "label": "What is Top K?", "url": "https://www.youtube.com/watch?v=EbZv6-N8Xlk" },
+                ]
+              },
+              {
                 "name": "Agents",
                 "description": "AI systems that can autonomously plan, reason, and take actions to accomplish goals. Agents use LLMs as their reasoning engine and interact with the world through tools like APIs, web browsers, and code execution.",
                 "tags": ["Agentic AI", "Core Concept"],
