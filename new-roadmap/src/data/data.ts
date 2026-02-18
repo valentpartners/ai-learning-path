@@ -535,6 +535,189 @@ export const DEV_PATH: DataNode[] = [
           },
         ],
       },
+      // {
+      //   name: "Agent Orchestration",
+      //   icon: "3",
+      //   color: "#cf3e3e",
+      //   description:
+      //     "This module covers the leading agentic AI frameworks, as well as enterprise orchestration platforms from AWS and Azure.",
+      //   children: [
+      //     {
+      //       name: "Frameworks & Libraries",
+      //       children: [
+      //         {
+      //           name: "Semantic Kernel",
+      //           description:
+      //             "Microsoft's open-source SDK for integrating LLMs into applications. Supports C#, Python, and Java with a plugin architecture, planners, and memory connectors for enterprise AI development.",
+      //           tags: ["Framework", "Microsoft", "C#", "Python"],
+      //           sources: [
+      //             {
+      //               label: "Semantic Kernel Docs",
+      //               url: "https://learn.microsoft.com/en-us/semantic-kernel/",
+      //             },
+      //             {
+      //               label: "GitHub Repository",
+      //               url: "https://github.com/microsoft/semantic-kernel",
+      //             },
+      //             {
+      //               label: "Semantic Kernel Tutorial",
+      //               url: "https://www.youtube.com/watch?v=ewHPdDtmHj4&list=PLyqwquIuSMZpGDiocmT-M67dcDxjWmoYK&index=20",
+      //             },
+      //           ],
+      //         },
+      //         {
+      //           name: "AutoGen",
+      //           description:
+      //             "Microsoft's framework for building multi-agent conversational systems. Agents can collaborate, debate, and work together on complex tasks with human-in-the-loop capabilities.",
+      //           tags: ["Framework", "Multi-Agent", "Microsoft"],
+      //           sources: [
+      //             {
+      //               label: "AutoGen Docs",
+      //               url: "https://microsoft.github.io/autogen/",
+      //             },
+      //             {
+      //               label: "GitHub Repository",
+      //               url: "https://github.com/microsoft/autogen",
+      //             },
+      //             {
+      //               label: "AutoGen Tutorial",
+      //               url: "https://www.youtube.com/watch?v=ewHPdDtmHj4&list=PLyqwquIuSMZpGDiocmT-M67dcDxjWmoYK&index=20",
+      //             },
+      //           ],
+      //         },
+      //         {
+      //           name: "Microsoft Agent Framework",
+      //           description:
+      //             "Microsoft's broader agentic AI framework for building autonomous agents that can plan, reason, and take actions. Integrates with Azure AI services and enterprise tooling. Agent Framework combines AutoGen's simple agent abstractions with Semantic Kernel's enterprise features — session-based state management, type safety, middleware, telemetry — and adds graph-based workflows for explicit multi-agent orchestration.",
+      //           tags: ["Framework", "Enterprise", "Azure"],
+      //           sources: [
+      //             {
+      //               label: "Microsoft Agent Framework Docs",
+      //               url: "https://learn.microsoft.com/en-us/agent-framework/overview/?pivots=programming-language-csharp",
+      //             },
+      //             {
+      //               label: "GitHub Repository",
+      //               url: "https://github.com/microsoft/agent-framework",
+      //             },
+      //             {
+      //               label: "Microsoft Agent Framework tutorial",
+      //               url: "https://www.youtube.com/watch?v=EAeUiipzCTE",
+      //             },
+      //           ],
+      //         },
+      //         {
+      //           name: "AI-SDK (JavaScript/Vercel)",
+      //           description:
+      //             "Vercel's TypeScript toolkit for building AI applications with React. Provides hooks and streaming utilities for chat interfaces, generative UI, and tool calling with any LLM provider.",
+      //           tags: ["Framework", "TypeScript", "React"],
+      //           sources: [
+      //             {
+      //               label: "AI SDK Docs",
+      //               url: "https://ai-sdk.dev/getting-started",
+      //             },
+      //             {
+      //               label: "GitHub Repository",
+      //               url: "https://github.com/vercel/ai",
+      //             },
+      //             {
+      //               label: "AI SDK Cookbook",
+      //               url: "https://ai-sdk.dev/cookbook",
+      //             },
+      //             {
+      //               label: "AI SDK Guides",
+      //               url: "https://ai-sdk.dev/cookbook/guides",
+      //             },
+      //             {
+      //               label: "AI SDK Tutorial",
+      //               url: "https://www.youtube.com/watch?v=mojZpktAiYQ",
+      //             },
+      //           ],
+      //         },
+      //         {
+      //           name: "LangChain",
+      //           description:
+      //             "The most popular framework for building applications powered by language models. Provides composable components for chains, agents, retrieval, memory, and tool use across Python and JavaScript.",
+      //           tags: ["Framework", "Python", "JavaScript"],
+      //           sources: [
+      //             {
+      //               label: "LangChain Python Docs",
+      //               url: "https://python.langchain.com/",
+      //             },
+      //             {
+      //               label: "LangChain JS Docs",
+      //               url: "https://js.langchain.com/",
+      //             },
+      //             {
+      //               label: "LangChain Python Tutorial",
+      //               url: "https://www.youtube.com/watch?v=lG7Uxts9SXs",
+      //             },
+      //             {
+      //               label: "LangChain JS Tutorial",
+      //               url: "https://www.youtube.com/watch?v=HSZ_uaif57o",
+      //             },
+      //           ],
+      //         },
+      //       ],
+      //     },
+      //     {
+      //       name: "Enterprise Orchestration",
+      //       children: [
+      //         {
+      //           name: "Amazon Agent Core",
+      //           description:
+      //             "Amazon Bedrock AgentCore is an agentic platform for building, deploying, and operating highly effective agents securely at scale using any framework and foundation model",
+      //           tags: ["Framework", "AWS", "Agentic AI"],
+      //           sources: [
+      //             {
+      //               label: "Agent Core Docs",
+      //               url: "https://docs.aws.amazon.com/bedrock-agentcore/",
+      //             },
+      //             {
+      //               label: "Agent Core - Getting Started Toolkit",
+      //               url: "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/agentcore-get-started-toolkit.html",
+      //             },
+      //             {
+      //               label: "Agent Core - Samples",
+      //               url: "https://github.com/awslabs/amazon-bedrock-agentcore-samples/?tab=readme-ov-file",
+      //             },
+      //             {
+      //               label: "Agent Core Deep Dive",
+      //               url: "https://www.youtube.com/watch?v=Op6L62rS5WU&list=PLrDJzKfz9AUuq0Rt-I0HyWgCNOYME1f6Y",
+      //             },
+      //           ],
+      //         },
+      //         {
+      //           name: "Azure Foundry Agent Service",
+      //           description:
+      //             "Agent Service provides a production-ready foundation for deploying intelligent agents in enterprise environments",
+      //           tags: ["Framework", "Azure", "Agentic AI"],
+      //           sources: [
+      //             {
+      //               label: "Agent Service Docs",
+      //               url: "https://learn.microsoft.com/en-us/azure/ai-foundry/agents/overview?view=foundry&preserve-view=true",
+      //             },
+      //             {
+      //               label: "FAQ",
+      //               url: "https://learn.microsoft.com/en-us/azure/ai-foundry/agents/faq?view=foundry",
+      //             },
+      //             {
+      //               label: "Deploy your first agent",
+      //               url: "https://learn.microsoft.com/en-us/azure/ai-foundry/agents/quickstarts/quickstart-hosted-agent?view=foundry",
+      //             },
+      //             {
+      //               label: "Observability and monitoring",
+      //               url: "https://learn.microsoft.com/en-us/azure/ai-foundry/agents/how-to/metrics?view=foundry",
+      //             },
+      //             {
+      //               label: "Develop AI Agents on Azure",
+      //               url: "https://www.youtube.com/watch?v=EoghOd0hU6E&list=PLahhVEj9XNTd9_qEnUZSUfxWSSpRwqXjk&index=1",
+      //             },
+      //           ],
+      //         },
+      //       ],
+      //     },
+      //   ],
+      // },
     ],
   },
 ];
