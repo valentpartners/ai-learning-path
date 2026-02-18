@@ -1,9 +1,9 @@
 interface HeaderProps {
     name: string
-    description: string
+    description?: string
 }
 
-export function Header({ name, description }: HeaderProps) {
+export function Header({ name, description = "" }: HeaderProps) {
     return (
         <header className="header">
             <h1>{name}</h1>
