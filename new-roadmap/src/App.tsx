@@ -17,7 +17,7 @@ export default function App() {
           <Route path="/business" element={<BusinessPath />} />
           <Route path="/certifications" element={<Certifications />} />
           <Route
-            path="/dev-path/phase-2/project-guidelines"
+            path="/project-guidelines"
             element={<AgentProjectGuidelines />}
           />
 

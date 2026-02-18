@@ -527,7 +527,7 @@ export const DEV_PATH: DataNode[] = [
                 sources: [
                   {
                     label: "Project Guidelines",
-                    url: "dev-path/phase-2/project-guidelines",
+                    url: "/project-guidelines",
                   },
                 ],
               },
