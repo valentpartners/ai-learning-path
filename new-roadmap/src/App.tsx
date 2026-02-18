@@ -1,9 +1,9 @@
-import { Routes, Route } from 'react-router-dom'
-import { SideNav } from './components/SideNav'
-import Home from './pages/Home'
-import DeveloperPath from './pages/DeveloperPath'
-import { BusinessPath } from './pages/BusinessPath'
-import { Certifications } from './pages/Certifications'
+import { Routes, Route } from "react-router-dom";
+import { SideNav } from "./components/SideNav";
+import Home from "./pages/Home";
+import DeveloperPath from "./pages/DeveloperPath";
+import { BusinessPath } from "./pages/BusinessPath";
+import { Certifications } from "./pages/Certifications";
 
 export default function App() {
   return (
@@ -15,8 +15,11 @@ export default function App() {
           <Route path="/developer" element={<DeveloperPath />} />
           <Route path="/business" element={<BusinessPath />} />
           <Route path="/certifications" element={<Certifications />} />
+
+          {/* wild card to go to home */}
+          <Route path="*" element={<Home />} />
         </Routes>
       </main>
     </div>
-  )
+  );
 }

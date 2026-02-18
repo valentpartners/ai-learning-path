@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Home() {
   return (
     <div className="container">
@@ -8,7 +10,7 @@ export default function Home() {
         </p>
       </header>
       <main className="path-cards">
-        <a href="/developer" className="path-card path-card--developer">
+        <Link to="/developer" className="path-card path-card--developer">
           <span className="path-card-icon">&#60;/&#62;</span>
           <h2 className="path-card-title">Developer Track</h2>
           <p className="path-card-desc">
@@ -18,8 +20,8 @@ export default function Home() {
           <span className="path-card-cta">
             Start learning <span className="path-card-arrow">&#8594;</span>
           </span>
-        </a>
-        <a href="/business" className="path-card path-card--business">
+        </Link>
+        <Link to="/business" className="path-card path-card--business">
           <span className="path-card-icon">&#9670;</span>
           <h2 className="path-card-title">Business Track</h2>
           <p className="path-card-desc">
@@ -28,7 +30,7 @@ export default function Home() {
           <span className="path-card-cta">
             Start learning <span className="path-card-arrow">&#8594;</span>
           </span>
-        </a>
+        </Link>
       </main>
     </div>
   );
