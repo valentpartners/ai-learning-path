@@ -74,6 +74,52 @@ export const DATA: DataNode[] = [
             ]
           },
           {
+            "name": "Agent Design Patterns",
+            "children": [
+              {
+                "name": "Orchestrating Agents",
+                "description": "Techniques for coordinating multiple AI agents to work together on complex tasks. This includes communication protocols, task decomposition, and shared memory systems to enable collaborative problem-solving.",
+                "tags": ["Agentic AI", "Collaboration", "Advanced"],
+                "sources": [
+                  { "label": "Orchestrating Multiple AI Agents", "url": "https://www.anthropic.com/engineering/building-effective-agents" }
+                ]
+              },
+              {
+                "name": "ReAct (Reason + Act)",
+                "description": "A pattern where the agent alternates between reasoning (thinking about what to do) and acting (executing tools or actions). The model generates a thought, takes an action, observes the result, and repeats until the task is complete.",
+                "tags": ["Pattern", "Reasoning", "Foundational"],
+                "sources": [
+                  { "label": "Prompting Guide — ReAct", "url": "https://www.promptingguide.ai/techniques/react" },
+                  { "label": "ReAct Paper", "url": "https://arxiv.org/abs/2210.03629" }
+                ]
+              },
+              {
+                "name": "Plan-and-Execute",
+                "description": "A two-phase pattern where one LLM call creates a high-level plan of steps, and subsequent calls execute each step. Separating planning from execution improves reliability on complex, multi-step tasks.",
+                "tags": ["Pattern", "Planning", "Multi-step"],
+                "sources": [
+                  { "label": "LangChain — Planning Agents", "url": "https://blog.langchain.dev/planning-agents/" }
+                ]
+              },
+              {
+                "name": "Reflection & Self-Critique",
+                "description": "Agents evaluate and critique their own outputs before finalizing them. An inner loop reviews the response for errors, completeness, and quality, then revises as needed. Dramatically improves output quality.",
+                "tags": ["Pattern", "Quality", "Self-improvement"],
+                "sources": [
+                  { "label": "Reflexion Paper", "url": "https://arxiv.org/abs/2303.11366" }
+                ]
+              },
+              {
+                "name": "Human-in-the-Loop",
+                "description": "Designing agent systems that can request human approval, feedback, or input at critical decision points. Balances autonomy with oversight, especially important for high-stakes actions or when agent confidence is low.",
+                "tags": ["Pattern", "Safety", "Oversight"],
+                "sources": [
+                  { "label": "LangChain — Human-in-the-Loop", "url": "https://python.langchain.com/docs/concepts/human_in_the_loop/" }
+                ]
+              }
+            ]
+          },
+          {
             "name": "Advanced Optimization",
             "children": [
               {
@@ -116,16 +162,8 @@ export const DATA: DataNode[] = [
                   { "label": "MCP (Model Context Protocol) Explained", "url": "https://www.youtube.com/watch?v=7j1t3UZA1TY&t" }
                 ]
               },
-              {
-                "name": "Orchestratinng Agents",
-                "description": "Techniques for coordinating multiple AI agents to work together on complex tasks. This includes communication protocols, task decomposition, and shared memory systems to enable collaborative problem-solving.",
-                "tags": ["Agentic AI", "Collaboration", "Advanced"],
-                "sources": [
-                  { "label": "Orchestrating Multiple AI Agents", "url": "https://www.anthropic.com/engineering/building-effective-agents" }
-                ]
-              }
             ]
-          }
+          },
         ]
       },
       {
@@ -290,6 +328,15 @@ export const DATA: DataNode[] = [
                 "sources": [
                   { "label": "Learn RAG From Scratch – Python AI Tutorial from a LangChain Engineer", "url": "https://www.youtube.com/watch?v=sVcwVQRHIc8&" }
                 ]
+              },
+            ]
+          },
+          {
+            "name": "Final Project: Build an AI Agentic Application",
+            "children": [
+              {
+                "name": "Project Overview",
+                "description": "Apply everything you've learned by building a complete AI agentic application. This project will involve designing an agent architecture, implementing it using a framework of your choice, and deploying it on a cloud platform.",
               }
             ]
           }

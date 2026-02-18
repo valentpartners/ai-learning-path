@@ -6,7 +6,7 @@
   - [Basics of AI](#basics-of-ai)
   - [Model Optimization](#model-optimization)
   - [Advanced Optimization](#advanced-optimization)
-- [Generative AI](#-generative-ai)
+- [AI Building Blocks](#-ai-building-blocks)
   - [Cloud Platforms](#cloud-platforms)
   - [Build an AI Chat App](#build-an-ai-chat-app)
   - [Tools and Plugins](#tools-and-plugins)
