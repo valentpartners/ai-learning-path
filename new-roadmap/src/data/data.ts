@@ -770,17 +770,18 @@ export const BUSINESS_PATH: DataNode[] = [
 
 export const CERTIFICATIONS_PATH: DataNode[] = [
   {
-    name: "AI Certifications",
-    description:
-      "This module covers the key certifications offered by AWS and Microsoft Azure for AI practitioners and engineers, along with recommended learning paths and resources to prepare for these exams.",
+    name: "Certifications",
+    description: "",
     children: [
       {
-        name: "AWS AI Certifications",
-        icon: "AWS",
-        color: "#ff9900",
+        name: "Developer Certifications",
+        description:
+          "This module covers the key certifications offered by AWS and Microsoft Azure for AI practitioners and engineers, along with recommended learning paths and resources to prepare for these exams.",
         children: [
           {
-            name: "AWS Learning Tracks",
+            name: "AWS",
+            icon: "",
+            color: "#ff9900",
             children: [
               {
                 name: "AWS Track - Beginner",
@@ -867,15 +868,10 @@ export const CERTIFICATIONS_PATH: DataNode[] = [
               },
             ],
           },
-        ],
-      },
-      {
-        name: "Microsoft Azure AI Certifications",
-        icon: "Azure",
-        color: "#0078d4",
-        children: [
           {
-            name: "Azure Learning Tracks",
+            name: "Azure",
+            icon: "",
+            color: "#0078d4",
             children: [
               {
                 name: "Azure Track - Beginner",
@@ -1003,6 +999,11 @@ export const CERTIFICATIONS_PATH: DataNode[] = [
             ],
           },
         ],
+      },
+      {
+        name: "Business Certifications",
+        description: "",
+        children: [],
       },
     ],
   },
