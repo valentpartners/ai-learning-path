@@ -1,7 +1,7 @@
 export interface Source {
-  label?: string;
-  name?: string;
+  label: string;
   url: string;
+  route?: string;
 }
 
 export interface DataNode {

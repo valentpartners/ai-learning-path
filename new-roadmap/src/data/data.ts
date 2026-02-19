@@ -200,7 +200,7 @@ export const DEV_PATH: DataNode[] = [
                 tags: ["Vectors", "Semantic", "Core"],
                 sources: [
                   {
-                    name: "What are embeddings?",
+                    label: "What are embeddings?",
                     url: "https://www.youtube.com/watch?v=wgfSDrqYMJ4",
                   },
                 ],
@@ -212,7 +212,7 @@ export const DEV_PATH: DataNode[] = [
                 tags: ["Database", "Infrastructure"],
                 sources: [
                   {
-                    name: "Vector Databases Explained",
+                    label: "Vector Databases Explained",
                     url: "https://www.youtube.com/watch?v=gl1r1XV0SLw",
                   },
                 ],
@@ -527,7 +527,8 @@ export const DEV_PATH: DataNode[] = [
                 sources: [
                   {
                     label: "Project Guidelines",
-                    url: "/project-guidelines",
+                    url: "",
+                    route: "/project-guidelines",
                   },
                 ],
               },
