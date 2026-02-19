@@ -253,282 +253,366 @@ export const DEV_PATH: DataNode[] = [
           "This module covers cloud platforms for AI development, building AI chat applications, using tools and plugins, creating agents, setting up MCP, and implementing RAG.",
         children: [
           {
-            name: "Deploy a Model in the Cloud",
+            name: "AWS",
+            description: "TODO",
             children: [
               {
-                name: "Azure AI Foundry",
-                description:
-                  "Microsoft's unified platform for building AI applications on Azure. Provides access to OpenAI models, open-source models, evaluation tools, prompt flow, and enterprise-grade deployment.",
-                tags: ["Cloud", "Microsoft", "Enterprise"],
-                sources: [
+                name: "Deploy a Model in the Cloud",
+                children: [
                   {
-                    label: "Azure AI Foundry",
-                    url: "https://azure.microsoft.com/en-us/products/ai-services",
-                  },
-                  {
-                    label: "Azure AI Docs",
-                    url: "https://learn.microsoft.com/en-us/azure/ai-studio/",
-                  },
-                  {
-                    label: "Deploy Models in Azure Foundry",
-                    url: "https://www.youtube.com/watch?v=ewHPdDtmHj4&list=PLyqwquIuSMZpGDiocmT-M67dcDxjWmoYK&index=21",
+                    name: "AWS Bedrock",
+                    description:
+                      "Amazon's fully managed service for building with foundation models. Access Anthropic Claude, Meta Llama, Mistral, and other models through a unified API with fine-tuning, guardrails, and knowledge bases.",
+                    tags: ["Cloud", "AWS", "Multi-model"],
+                    sources: [
+                      {
+                        label: "AWS Bedrock",
+                        url: "https://aws.amazon.com/bedrock/",
+                      },
+                      {
+                        label: "Bedrock Documentation",
+                        url: "https://docs.aws.amazon.com/bedrock/",
+                      },
+                      {
+                        label: "Deploy a Model in Bedrock",
+                        url: "https://www.youtube.com/watch?v=nSQrY-uPWLY",
+                      },
+                      {
+                        label: "Import custom model to Bedrock",
+                        url: "https://www.youtube.com/watch?v=1aq_ju70qHQ",
+                      },
+                    ],
                   },
                 ],
               },
               {
-                name: "AWS Bedrock",
-                description:
-                  "Amazon's fully managed service for building with foundation models. Access Anthropic Claude, Meta Llama, Mistral, and other models through a unified API with fine-tuning, guardrails, and knowledge bases.",
-                tags: ["Cloud", "AWS", "Multi-model"],
-                sources: [
+                name: "Build an AI chat app",
+                children: [
                   {
-                    label: "AWS Bedrock",
-                    url: "https://aws.amazon.com/bedrock/",
+                    name: "Building an AI Chat App with AWS Bedrock",
+                    description:
+                      "Learn how to build a simple AI chat application using Amazon Bedrock.",
+                    tags: ["Tutorial", "AWS Bedrock", "Chat App"],
+                    sources: [
+                      {
+                        label:
+                          "Tutorial: Build an AI Chat App with Amazon Bedrock",
+                        url: "https://www.youtube.com/watch?v=E1-mUfpeRu0",
+                      },
+                      {
+                        label: "Repository",
+                        url: "https://github.com/trevorspires/Bedrock-Chatbot-Youtube/blob/main/main.py",
+                      },
+                    ],
+                  },
+                ],
+              },
+              {
+                name: "Model Tools and Plugins",
+                children: [
+                  {
+                    name: "AWS Bedrock Tools",
+                    description: "Learn how to use tools in AWS Bedrock.",
+                    tags: ["AWS Bedrock", "Tools"],
+                    sources: [
+                      {
+                        label:
+                          "Agents Tools & Function Calling with Amazon Bedrock (How-to)",
+                        url: "https://www.youtube.com/watch?v=2L_XE6g3atI",
+                      },
+                    ],
+                  },
+                ],
+              },
+              {
+                name: "Creating Agents",
+                children: [
+                  {
+                    name: "Create Agents with AWS Bedrock",
+                    description:
+                      "Learn how to create AI agents using AWS Bedrock.",
+                    tags: ["AWS Bedrock", "Agents", "Agent Core"],
+                    sources: [
+                      {
+                        label: "Tutorial: Deploy any AI agent with AgentCore",
+                        url: "https://www.youtube.com/watch?v=N7FGbBq1mI4",
+                      },
+                    ],
+                  },
+                ],
+              },
+              {
+                name: "MCP setup",
+                children: [
+                  {
+                    name: "MCP Overview",
+                    description:
+                      "Learn how to build modular AI applications using MCP to connect Claude with external tools and data sources. Deep dive into MCP's advanced features including sampling, notifications, and transport implementations",
+                    sources: [
+                      {
+                        label: "Intro to MCP",
+                        url: "https://anthropic.skilljar.com/introduction-to-model-context-protocol",
+                      },
+                      {
+                        label: "Advanced MCP",
+                        url: "https://anthropic.skilljar.com/model-context-protocol-advanced-topics",
+                      },
+                    ],
                   },
                   {
-                    label: "Bedrock Documentation",
-                    url: "https://docs.aws.amazon.com/bedrock/",
+                    name: "MCP Implementation with AWS Bedrock",
+                    description: "Learn how to implement MCP with AWS Bedrock.",
+                    sources: [
+                      {
+                        label: "MCP with AWS Bedrock - part 1",
+                        url: "https://www.youtube.com/watch?v=6OgFTW6bfSk",
+                      },
+                      {
+                        label: "How to build an MCP Server - part 2",
+                        url: "https://www.youtube.com/watch?v=RO6gBtPi25w",
+                      },
+                    ],
+                  },
+                ],
+              },
+              {
+                name: "RAG Implementation",
+                children: [
+                  {
+                    name: "What is RAG?",
+                    description:
+                      "RAG (Retrieval-Augmented Generation) is a technique that combines information retrieval with generative AI models. It allows LLMs to access external knowledge sources during generation, improving accuracy and relevance of responses.",
+                    sources: [
+                      {
+                        label: "RAG Overview",
+                        url: "https://aws.amazon.com/what-is/retrieval-augmented-generation/",
+                      },
+                    ],
                   },
                   {
-                    label: "Deploy a Model in Bedrock",
-                    url: "https://www.youtube.com/watch?v=nSQrY-uPWLY",
+                    name: "Implementing RAG in AWS",
+                    description:
+                      "Learn how to implement RAG in Amazon Bedrock.",
+                    tags: [
+                      "RAG",
+                      "AWS Bedrock",
+                      "Agent Core",
+                      "Knowledge Base",
+                    ],
+                    sources: [
+                      {
+                        label:
+                          "Build a RAG based Generative AI Chatbot in 20 mins using Amazon Bedrock Knowledge Base",
+                        url: "https://www.youtube.com/watch?v=hnyDDfo8e9Q",
+                      },
+                    ],
                   },
+                ],
+              },
+              {
+                name: "Final Project: Build an AI Agentic Application",
+                children: [
                   {
-                    label: "Import custom model to Bedrock",
-                    url: "https://www.youtube.com/watch?v=1aq_ju70qHQ",
+                    name: "Project Overview",
+                    description:
+                      "Apply everything you've learned by building a complete AI agentic application. This project will involve designing an agent architecture, implementing it using a framework of your choice, and deploying it on a cloud platform.",
+                    sources: [
+                      {
+                        label: "Project Guidelines",
+                        url: "",
+                        route: "/project-guidelines",
+                      },
+                    ],
                   },
                 ],
               },
             ],
           },
           {
-            name: "Build an AI chat app",
+            name: "AZURE",
+            description: "TODO",
             children: [
               {
-                name: "Building an AI Chat App with AWS Bedrock",
-                description:
-                  "Learn how to build a simple AI chat application using Amazon Bedrock.",
-                tags: ["Tutorial", "AWS Bedrock", "Chat App"],
-                sources: [
+                name: "Deploy a Model in the Cloud",
+                children: [
                   {
-                    label: "Tutorial: Build an AI Chat App with Amazon Bedrock",
-                    url: "https://www.youtube.com/watch?v=E1-mUfpeRu0",
-                  },
-                  {
-                    label: "Repository",
-                    url: "https://github.com/trevorspires/Bedrock-Chatbot-Youtube/blob/main/main.py",
-                  },
-                ],
-              },
-              {
-                name: "Building an AI Chat App with Azure Foundry",
-                description:
-                  "Learn how to build a simple AI chat application using Azure Foundry.",
-                tags: ["Tutorial", "Azure Foundry", "Chat App"],
-                sources: [
-                  {
-                    label: "Simple Chat App",
-                    url: "https://www.youtube.com/watch?v=lPsMx8yaO_I&list=PLyqwquIuSMZpGDiocmT-M67dcDxjWmoYK&index=19",
-                  },
-                  {
-                    label: "Simple Chat App - Settings, History and Streaming",
-                    url: "https://www.youtube.com/watch?v=RKY8DWGOWTI&list=PLyqwquIuSMZpGDiocmT-M67dcDxjWmoYK&index=18",
-                  },
-                ],
-              },
-            ],
-          },
-          {
-            name: "Model Tools and Plugins",
-            children: [
-              {
-                name: "Semantic Kernel Plugins",
-                description:
-                  "Learn how to build and use plugins in Semantic Kernel.",
-                tags: ["Semantic Kernel", "Plugins"],
-                sources: [
-                  {
-                    label: "Semantic Kernel Plugins",
-                    url: "https://www.youtube.com/watch?v=Xq1MeGssPWA&list=PLyqwquIuSMZpGDiocmT-M67dcDxjWmoYK&index=10",
-                  },
-                  {
-                    label: "Semantic Kernel Multiple Plugins",
-                    url: "https://www.youtube.com/watch?v=ety3aQ32b8U&list=PLyqwquIuSMZpGDiocmT-M67dcDxjWmoYK&index=9",
+                    name: "Azure AI Foundry",
+                    description:
+                      "Microsoft's unified platform for building AI applications on Azure. Provides access to OpenAI models, open-source models, evaluation tools, prompt flow, and enterprise-grade deployment.",
+                    tags: ["Cloud", "Microsoft", "Enterprise"],
+                    sources: [
+                      {
+                        label: "Azure AI Foundry",
+                        url: "https://azure.microsoft.com/en-us/products/ai-services",
+                      },
+                      {
+                        label: "Azure AI Docs",
+                        url: "https://learn.microsoft.com/en-us/azure/ai-studio/",
+                      },
+                      {
+                        label: "Deploy Models in Azure Foundry",
+                        url: "https://www.youtube.com/watch?v=ewHPdDtmHj4&list=PLyqwquIuSMZpGDiocmT-M67dcDxjWmoYK&index=21",
+                      },
+                    ],
                   },
                 ],
               },
               {
-                name: "AWS Bedrock Tools",
-                description: "Learn how to use tools in AWS Bedrock.",
-                tags: ["AWS Bedrock", "Tools"],
-                sources: [
+                name: "Build an AI chat app",
+                children: [
                   {
-                    label:
-                      "Agents Tools & Function Calling with Amazon Bedrock (How-to)",
-                    url: "https://www.youtube.com/watch?v=2L_XE6g3atI",
-                  },
-                ],
-              },
-            ],
-          },
-          {
-            name: "Creating Agents",
-            children: [
-              {
-                name: "Create Agents with Azure Foundry",
-                description:
-                  "Learn how to create AI agents using Azure Foundry.",
-                tags: ["Azure Foundry", "Agents", "Semantic Kernel"],
-                sources: [
-                  {
-                    label:
-                      "Single Agent Creation with Azure Foundry and Semantic Kernel",
-                    url: "https://www.youtube.com/watch?v=EtvW3sr_vqA&list=PLyqwquIuSMZpGDiocmT-M67dcDxjWmoYK&index=5",
-                  },
-                  {
-                    label:
-                      "Multiple Agent Creation with Azure Foundry and Semantic Kernel",
-                    url: "https://www.youtube.com/watch?v=0hXFDPx9bug&list=PLyqwquIuSMZpGDiocmT-M67dcDxjWmoYK&index=3",
+                    name: "Building an AI Chat App with Azure Foundry",
+                    description:
+                      "Learn how to build a simple AI chat application using Azure Foundry.",
+                    tags: ["Tutorial", "Azure Foundry", "Chat App"],
+                    sources: [
+                      {
+                        label: "Simple Chat App",
+                        url: "https://www.youtube.com/watch?v=lPsMx8yaO_I&list=PLyqwquIuSMZpGDiocmT-M67dcDxjWmoYK&index=19",
+                      },
+                      {
+                        label:
+                          "Simple Chat App - Settings, History and Streaming",
+                        url: "https://www.youtube.com/watch?v=RKY8DWGOWTI&list=PLyqwquIuSMZpGDiocmT-M67dcDxjWmoYK&index=18",
+                      },
+                    ],
                   },
                 ],
               },
               {
-                name: "Create Agents with AWS Bedrock",
-                description: "Learn how to create AI agents using AWS Bedrock.",
-                tags: ["AWS Bedrock", "Agents", "Agent Core"],
-                sources: [
+                name: "Model Tools and Plugins",
+                children: [
                   {
-                    label: "Tutorial: Deploy any AI agent with AgentCore",
-                    url: "https://www.youtube.com/watch?v=N7FGbBq1mI4",
-                  },
-                ],
-              },
-            ],
-          },
-          {
-            name: "MCP setup",
-            children: [
-              {
-                name: "MCP Overview",
-                description:
-                  "Learn how to build modular AI applications using MCP to connect Claude with external tools and data sources. Deep dive into MCP's advanced features including sampling, notifications, and transport implementations",
-                sources: [
-                  {
-                    label: "Intro to MCP",
-                    url: "https://anthropic.skilljar.com/introduction-to-model-context-protocol",
-                  },
-                  {
-                    label: "Advanced MCP",
-                    url: "https://anthropic.skilljar.com/model-context-protocol-advanced-topics",
+                    name: "Semantic Kernel Plugins",
+                    description:
+                      "Learn how to build and use plugins in Semantic Kernel.",
+                    tags: ["Semantic Kernel", "Plugins"],
+                    sources: [
+                      {
+                        label: "Semantic Kernel Plugins",
+                        url: "https://www.youtube.com/watch?v=Xq1MeGssPWA&list=PLyqwquIuSMZpGDiocmT-M67dcDxjWmoYK&index=10",
+                      },
+                      {
+                        label: "Semantic Kernel Multiple Plugins",
+                        url: "https://www.youtube.com/watch?v=ety3aQ32b8U&list=PLyqwquIuSMZpGDiocmT-M67dcDxjWmoYK&index=9",
+                      },
+                    ],
                   },
                 ],
               },
               {
-                name: "MCP Implementation with Semantic Kernel",
-                description: "Learn how to implement MCP with Semantic Kernel.",
-                sources: [
+                name: "Creating Agents",
+                children: [
                   {
-                    label: "Semantic Kernel Fundamentals - MCP StdioTransport",
-                    url: "https://www.youtube.com/watch?v=NE9Y-6jizO0&list=PLyqwquIuSMZpGDiocmT-M67dcDxjWmoYK&index=2",
-                  },
-                  {
-                    label: "Semantic Kernel Fundamentals - MCP StreamableHttp",
-                    url: "https://www.youtube.com/watch?v=1tTUOU9Gnd8&list=PLyqwquIuSMZpGDiocmT-M67dcDxjWmoYK&index=1",
-                  },
-                ],
-              },
-              {
-                name: "MCP Implementation with AWS Bedrock",
-                description: "Learn how to implement MCP with AWS Bedrock.",
-                sources: [
-                  {
-                    label: "MCP with AWS Bedrock - part 1",
-                    url: "https://www.youtube.com/watch?v=6OgFTW6bfSk",
-                  },
-                  {
-                    label: "How to build an MCP Server - part 2",
-                    url: "https://www.youtube.com/watch?v=RO6gBtPi25w",
-                  },
-                ],
-              },
-            ],
-          },
-          {
-            name: "RAG Implementation",
-            children: [
-              {
-                name: "What is RAG?",
-                description:
-                  "RAG (Retrieval-Augmented Generation) is a technique that combines information retrieval with generative AI models. It allows LLMs to access external knowledge sources during generation, improving accuracy and relevance of responses.",
-                sources: [
-                  {
-                    label: "RAG Overview",
-                    url: "https://aws.amazon.com/what-is/retrieval-augmented-generation/",
+                    name: "Create Agents with Azure Foundry",
+                    description:
+                      "Learn how to create AI agents using Azure Foundry.",
+                    tags: ["Azure Foundry", "Agents", "Semantic Kernel"],
+                    sources: [
+                      {
+                        label:
+                          "Single Agent Creation with Azure Foundry and Semantic Kernel",
+                        url: "https://www.youtube.com/watch?v=EtvW3sr_vqA&list=PLyqwquIuSMZpGDiocmT-M67dcDxjWmoYK&index=5",
+                      },
+                      {
+                        label:
+                          "Multiple Agent Creation with Azure Foundry and Semantic Kernel",
+                        url: "https://www.youtube.com/watch?v=0hXFDPx9bug&list=PLyqwquIuSMZpGDiocmT-M67dcDxjWmoYK&index=3",
+                      },
+                    ],
                   },
                 ],
               },
               {
-                name: "Implementing RAG in AWS",
-                description: "Learn how to implement RAG in Amazon Bedrock.",
-                tags: ["RAG", "AWS Bedrock", "Agent Core", "Knowledge Base"],
-                sources: [
+                name: "MCP setup",
+                children: [
                   {
-                    label:
-                      "Build a RAG based Generative AI Chatbot in 20 mins using Amazon Bedrock Knowledge Base",
-                    url: "https://www.youtube.com/watch?v=hnyDDfo8e9Q",
+                    name: "MCP Overview",
+                    description:
+                      "Learn how to build modular AI applications using MCP to connect Claude with external tools and data sources. Deep dive into MCP's advanced features including sampling, notifications, and transport implementations",
+                    sources: [
+                      {
+                        label: "Intro to MCP",
+                        url: "https://anthropic.skilljar.com/introduction-to-model-context-protocol",
+                      },
+                      {
+                        label: "Advanced MCP",
+                        url: "https://anthropic.skilljar.com/model-context-protocol-advanced-topics",
+                      },
+                    ],
+                  },
+                  {
+                    name: "MCP Implementation with Semantic Kernel",
+                    description:
+                      "Learn how to implement MCP with Semantic Kernel.",
+                    sources: [
+                      {
+                        label:
+                          "Semantic Kernel Fundamentals - MCP StdioTransport",
+                        url: "https://www.youtube.com/watch?v=NE9Y-6jizO0&list=PLyqwquIuSMZpGDiocmT-M67dcDxjWmoYK&index=2",
+                      },
+                      {
+                        label:
+                          "Semantic Kernel Fundamentals - MCP StreamableHttp",
+                        url: "https://www.youtube.com/watch?v=1tTUOU9Gnd8&list=PLyqwquIuSMZpGDiocmT-M67dcDxjWmoYK&index=1",
+                      },
+                    ],
                   },
                 ],
               },
               {
-                name: "Implementing RAG in Azure",
-                description:
-                  "Learn how to implement a Vector Store and a Search RAG in Azure AI Foundry.",
-                tags: [
-                  "RAG",
-                  "Azure AI Foundry",
-                  "Semantic Kernel",
-                  "Vector Store",
-                  "AI Search",
-                ],
-                sources: [
+                name: "RAG Implementation",
+                children: [
                   {
-                    label:
-                      "Semantic Kernel Fundamentals - AI Search Vector Store",
-                    url: "https://www.youtube.com/watch?v=txoGIPYBZoU&list=PLyqwquIuSMZpGDiocmT-M67dcDxjWmoYK&index=7",
+                    name: "What is RAG?",
+                    description:
+                      "RAG (Retrieval-Augmented Generation) is a technique that combines information retrieval with generative AI models. It allows LLMs to access external knowledge sources during generation, improving accuracy and relevance of responses.",
+                    sources: [
+                      {
+                        label: "RAG Overview",
+                        url: "https://aws.amazon.com/what-is/retrieval-augmented-generation/",
+                      },
+                    ],
                   },
                   {
-                    label: "Semantic Kernel Fundamentals - AI Search RAG",
-                    url: "https://www.youtube.com/watch?v=9_eHPPEQSTM&list=PLyqwquIuSMZpGDiocmT-M67dcDxjWmoYK&index=5",
+                    name: "Implementing RAG in Azure",
+                    description:
+                      "Learn how to implement a Vector Store and a Search RAG in Azure AI Foundry.",
+                    tags: [
+                      "RAG",
+                      "Azure AI Foundry",
+                      "Semantic Kernel",
+                      "Vector Store",
+                      "AI Search",
+                    ],
+                    sources: [
+                      {
+                        label:
+                          "Semantic Kernel Fundamentals - AI Search Vector Store",
+                        url: "https://www.youtube.com/watch?v=txoGIPYBZoU&list=PLyqwquIuSMZpGDiocmT-M67dcDxjWmoYK&index=7",
+                      },
+                      {
+                        label: "Semantic Kernel Fundamentals - AI Search RAG",
+                        url: "https://www.youtube.com/watch?v=9_eHPPEQSTM&list=PLyqwquIuSMZpGDiocmT-M67dcDxjWmoYK&index=5",
+                      },
+                    ],
                   },
                 ],
               },
               {
-                name: "Learn RAG From Scratch with LangChain",
-                description:
-                  "Learn how to implement RAG from scratch using the LangChain framework.",
-                tags: ["RAG", "LangChain", "Python"],
-                sources: [
+                name: "Final Project: Build an AI Agentic Application",
+                children: [
                   {
-                    label:
-                      "Learn RAG From Scratch – Python AI Tutorial from a LangChain Engineer",
-                    url: "https://www.youtube.com/watch?v=sVcwVQRHIc8&",
-                  },
-                ],
-              },
-            ],
-          },
-          {
-            name: "Final Project: Build an AI Agentic Application",
-            children: [
-              {
-                name: "Project Overview",
-                description:
-                  "Apply everything you've learned by building a complete AI agentic application. This project will involve designing an agent architecture, implementing it using a framework of your choice, and deploying it on a cloud platform.",
-                sources: [
-                  {
-                    label: "Project Guidelines",
-                    url: "",
-                    route: "/project-guidelines",
+                    name: "Project Overview",
+                    description:
+                      "Apply everything you've learned by building a complete AI agentic application. This project will involve designing an agent architecture, implementing it using a framework of your choice, and deploying it on a cloud platform.",
+                    sources: [
+                      {
+                        label: "Project Guidelines",
+                        url: "",
+                        route: "/project-guidelines",
+                      },
+                    ],
                   },
                 ],
               },
@@ -536,6 +620,7 @@ export const DEV_PATH: DataNode[] = [
           },
         ],
       },
+
       // {
       //   name: "Agent Orchestration",
       //   icon: "3",
