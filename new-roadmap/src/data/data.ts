@@ -74,13 +74,41 @@ export const DEV_PATH: DataNode[] = [
                   },
                 ],
               },
+              {
+                name: "Memory",
+                description:
+                  "Techniques for enabling LLMs to retain and recall information across interactions. Memory can be implemented through context management, external databases, or specialized memory modules to create more coherent and personalized AI experiences.",
+                tags: ["LLM", "Memory"],
+                sources: [
+                  {
+                    label: "What is AI agent memory?",
+                    url: "https://www.ibm.com/think/topics/ai-agent-memory#498277086",
+                  },
+                  {
+                    label: "Memory in AI agents",
+                    url: "https://www.youtube.com/watch?v=UF230UuclZM",
+                  },
+                ],
+              },
+              {
+                name: "Structured Outputs (JSON Mode)",
+                description:
+                  "Techniques for getting LLMs to return data in specific formats like JSON, XML, or typed schemas. Essential for building reliable AI pipelines where downstream systems need to parse model outputs programmatically.",
+                tags: ["Production", "Reliability", "API"],
+                sources: [
+                  {
+                    label: "Structured Outputs",
+                    url: "https://agenta.ai/blog/the-guide-to-structured-outputs-and-function-calling-with-llms",
+                  },
+                ],
+              },
             ],
           },
           {
             name: "Model Optimization",
             children: [
               {
-                name: "Model Optimization",
+                name: "Model Optimization Overview",
                 description:
                   "Techniques for improving LLM performance, including few-shot prompting, chain-of-thought prompting, and system prompts. Effective optimization can significantly enhance model outputs without changing the underlying model.",
                 tags: ["Optimization", "Prompting"],
@@ -88,6 +116,18 @@ export const DEV_PATH: DataNode[] = [
                   {
                     label: "Optimizing AI Models",
                     url: "https://www.youtube.com/watch?v=zYGDpG-pTho",
+                  },
+                ],
+              },
+              {
+                name: "Fine-tuning",
+                description:
+                  "The process of training a pre-trained LLM on a specific dataset to specialize it for a particular task or domain. Fine-tuning can be done with techniques like full model fine-tuning, LoRA, and prefix tuning.",
+                tags: ["Optimization", "Training"],
+                sources: [
+                  {
+                    label: "Fine Tuning Large Language Models",
+                    url: "https://www.youtube.com/watch?v=pu3-PeBG0YU",
                   },
                 ],
               },
@@ -108,6 +148,63 @@ export const DEV_PATH: DataNode[] = [
                   {
                     label: "Prompting Techniques Guide",
                     url: "https://www.promptingguide.ai/",
+                  },
+                ],
+              },
+            ],
+          },
+          {
+            name: "Dynamic Context",
+            children: [
+              {
+                name: "Embeddings",
+                description:
+                  "Numerical vector representations of text, images, or other data that capture semantic meaning. Similar concepts end up close together in vector space, enabling similarity search, clustering, and recommendation systems.",
+                tags: ["Vectors", "Semantic", "Core"],
+                sources: [
+                  {
+                    label: "What are embeddings?",
+                    url: "https://www.youtube.com/watch?v=wgfSDrqYMJ4",
+                  },
+                ],
+              },
+              {
+                name: "Vector Databases",
+                description:
+                  "Specialized databases optimized for storing and querying high-dimensional vectors. Enable fast similarity search at scale, forming the backbone of RAG systems, semantic search, and recommendation engines.",
+                tags: ["Database", "Infrastructure"],
+                sources: [
+                  {
+                    label: "Vector Databases Explained",
+                    url: "https://www.youtube.com/watch?v=gl1r1XV0SLw",
+                  },
+                ],
+              },
+              {
+                name: "RAG",
+                description:
+                  "Retrieval-Augmented Generation combines LLMs with external knowledge retrieval. Instead of relying solely on training data, RAG fetches relevant documents at query time and includes them in the prompt for more accurate, up-to-date responses.",
+                tags: ["Architecture", "Retrieval", "Key Pattern"],
+                sources: [
+                  {
+                    label: "What is RAG (Retrieval-Augmented Generation)?",
+                    url: "https://www.youtube.com/watch?v=T-D1OfcDW1M",
+                  },
+                  {
+                    label: "RAG vs Fine-tuning",
+                    url: "https://www.youtube.com/watch?v=00Q0G84kq3M",
+                  },
+                ],
+              },
+              {
+                name: "MCP",
+                description:
+                  "The Model Context Protocol is an open standard for connecting AI models to external data sources and tools. Think of it as a universal adapter — one protocol that lets any AI model talk to any data source or service.",
+                tags: ["Protocol", "Standard", "Integration"],
+                sources: [
+                  {
+                    label: "MCP (Model Context Protocol) Explained",
+                    url: "https://www.youtube.com/watch?v=7j1t3UZA1TY&t",
                   },
                 ],
               },
@@ -167,75 +264,22 @@ export const DEV_PATH: DataNode[] = [
             ],
           },
           {
-            name: "Advanced Optimization",
+            name: "Agents Orchestration",
             children: [
               {
-                name: "Structured Outputs (JSON Mode)",
+                name: "Agentic AI Overview",
                 description:
-                  "Techniques for getting LLMs to return data in specific formats like JSON, XML, or typed schemas. Essential for building reliable AI pipelines where downstream systems need to parse model outputs programmatically.",
-                tags: ["Production", "Reliability", "API"],
+                  "This course covers essential Agentic components like system prompts, tools, memory, and architectural patterns",
+                tags: ["Agentic AI", "Multi-Agent Systems", "Overview"],
                 sources: [
                   {
-                    label: "Structured Outputs",
-                    url: "https://agenta.ai/blog/the-guide-to-structured-outputs-and-function-calling-with-llms",
+                    label: "What is Agentic AI?",
+                    url: "https://www.youtube.com/watch?v=tr5Fapv80Cw&t=3968s",
                   },
                 ],
               },
               {
-                name: "Embeddings",
-                description:
-                  "Numerical vector representations of text, images, or other data that capture semantic meaning. Similar concepts end up close together in vector space, enabling similarity search, clustering, and recommendation systems.",
-                tags: ["Vectors", "Semantic", "Core"],
-                sources: [
-                  {
-                    label: "What are embeddings?",
-                    url: "https://www.youtube.com/watch?v=wgfSDrqYMJ4",
-                  },
-                ],
-              },
-              {
-                name: "Vector Databases",
-                description:
-                  "Specialized databases optimized for storing and querying high-dimensional vectors. Enable fast similarity search at scale, forming the backbone of RAG systems, semantic search, and recommendation engines.",
-                tags: ["Database", "Infrastructure"],
-                sources: [
-                  {
-                    label: "Vector Databases Explained",
-                    url: "https://www.youtube.com/watch?v=gl1r1XV0SLw",
-                  },
-                ],
-              },
-              {
-                name: "RAG",
-                description:
-                  "Retrieval-Augmented Generation combines LLMs with external knowledge retrieval. Instead of relying solely on training data, RAG fetches relevant documents at query time and includes them in the prompt for more accurate, up-to-date responses.",
-                tags: ["Architecture", "Retrieval", "Key Pattern"],
-                sources: [
-                  {
-                    label: "What is RAG (Retrieval-Augmented Generation)?",
-                    url: "https://www.youtube.com/watch?v=T-D1OfcDW1M",
-                  },
-                ],
-              },
-              {
-                name: "MCP",
-                description:
-                  "The Model Context Protocol is an open standard for connecting AI models to external data sources and tools. Think of it as a universal adapter — one protocol that lets any AI model talk to any data source or service.",
-                tags: ["Protocol", "Standard", "Integration"],
-                sources: [
-                  {
-                    label: "MCP (Model Context Protocol) Explained",
-                    url: "https://www.youtube.com/watch?v=7j1t3UZA1TY&t",
-                  },
-                ],
-              },
-            ],
-          },
-          {
-            name: "Agent Orchestration",
-            children: [
-              {
-                name: "Orchestrating Agents",
+                name: "Multi Agents Architecture",
                 description:
                   "Techniques for coordinating multiple AI agents to work together on complex tasks. ",
                 tags: ["Agentic AI", "Collaboration", "Advanced"],
@@ -636,7 +680,7 @@ export const DEV_PATH: DataNode[] = [
         ],
       },
       {
-        name: "Agent Orchestration",
+        name: "Enterprise Orchestration",
         icon: "3",
         color: "#cf3e3e",
         description:
