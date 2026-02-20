@@ -1,9 +1,13 @@
+import Markdown from "react-markdown";
+import remarkGfm from "remark-gfm";
+import content from "../data/HELP_DESK_PROJECT.md?raw";
+
 export default function HelpDeskProject() {
   return (
     <div className="container">
-      <header className="header">
-        <h1>Help Desk Project</h1>
-      </header>
+      <article className="markdown-body">
+        <Markdown remarkPlugins={[remarkGfm]}>{content}</Markdown>
+      </article>
     </div>
   );
 }
