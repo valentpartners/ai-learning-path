@@ -9,13 +9,18 @@ const navItems = [
     icon: "💻",
     children: [
       {
-        to: "/generic-project-guidelines",
+        to: "/generic-project",
         label: "Generic Project",
         icon: ">",
       },
       {
-        to: "/help-desk-project-guidelines",
+        to: "/help-desk-project",
         label: "Help Desk Project",
+        icon: ">",
+      },
+      {
+        to: "/help-desk-interactive-project",
+        label: "Help Desk Interactive",
         icon: ">",
       },
     ],

@@ -6,6 +6,7 @@ import { BusinessPath } from "./pages/BusinessPath";
 import { Certifications } from "./pages/Certifications";
 import AgentProjectGuidelines from "./pages/AgentProjectGuidelines";
 import HelpDeskProject from "./pages/HelpDeskProject";
+import HelpDeskInteractiveProject from "./pages/HelpDeskInteractiveProject";
 
 export default function App() {
   return (
@@ -17,13 +18,11 @@ export default function App() {
           <Route path="/developer" element={<DeveloperPath />} />
           <Route path="/business" element={<BusinessPath />} />
           <Route path="/certifications" element={<Certifications />} />
+          <Route path="/generic-project" element={<AgentProjectGuidelines />} />
+          <Route path="/help-desk-project" element={<HelpDeskProject />} />
           <Route
-            path="/generic-project-guidelines"
-            element={<AgentProjectGuidelines />}
-          />
-          <Route
-            path="/help-desk-project-guidelines"
-            element={<HelpDeskProject />}
+            path="/help-desk-interactive-project"
+            element={<HelpDeskInteractiveProject />}
           />
 
           {/* wild card to go to home */}
