@@ -1,5 +1,7 @@
 # AI Learning Path
 
+https://valentpartners.github.io/ai-learning-path
+
 A single-page React application that renders interactive, hierarchical learning roadmaps for AI topics including Developer, Business, and Certifications tracks.
 
 ## Prerequisites
